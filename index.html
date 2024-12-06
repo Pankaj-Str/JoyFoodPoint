@@ -60,14 +60,47 @@
       </nav>
 
 
+      <style>
+
+        .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: rgb(110, 109, 109);
+                    opacity: 1; /* Firefox */
+        }
+
+      </style>
+
 
       <!-- start models and controllers here -->
 
 
         <div class="modal" id="login">
 
-          <div class="modal-dialog">
-            <h1>hello</h1>
+          <div class="modal-dialog border border-1 border-warning rounded-3">
+             <div class="modal-content">
+                  <div class="modal-header bg-dark border-0">
+                      <h3 class="modal-title text-warning">Login !</h3>
+                      <button class="btn btn-close bg-warning" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body bg-dark text-white">
+
+
+                        <div class="m-2">
+                              <label class="form-label">Email - </label>
+                              <input class="form-control bg-dark border border-1 border-warning text-warning" type="email" placeholder="nishant@cwpc.in">
+                        </div>
+                        <div class="m-2">
+                          <label class="form-label">Password - </label>
+                          <input class="form-control bg-dark border border-1 border-warning text-warning" type="password" placeholder="nishant@123@!$">
+                       </div>
+
+
+                  </div>
+
+                  <div class="modal-footer bg-dark border-0">
+                      <button class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-light" >Submit</button>
+                  </div>
+             </div>
           </div>
 
         </div>
